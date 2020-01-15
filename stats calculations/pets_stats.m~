@@ -9,8 +9,8 @@ ax = gca; ax.YGrid = 'on';
 %%
 clear; clc;
 
-species=categorical({'Birds' 'Cats' 'Dogs' 'Livestock' 'Lizards' 'Other' 'Small Mammals' 'Snakes'});
+species=[{'Birds' 'Cats' 'Dogs' 'Livestock' 'Lizards' 'Other' 'Small Mammals' 'Snakes'}];
 count=[5 11 9 6 5 6 14 6];
 
-figure(); bar(species, count, 'FaceColor', [0.4940, 0.1840, 0.5560]);
-xlabel(' '); ylabel('Number of Pets'); ax = gca; ax.YGrid = 'on'; ylim([0, 14.3])
+figure(); bar(species, count); xlabel('Type of Animal'); ylabel('Number of Pets');
+ax = gca; ax.YGrid = 'on';
